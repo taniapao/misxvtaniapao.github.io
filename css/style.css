@@ -1,0 +1,333 @@
+body{
+    background-image:url('../img/back.jpg');
+    background-size: cover;
+    background-repeat:repeat-y;
+    background-position: center center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.logo:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.logo:nth-child(3){
+    transition-delay: 400ms;
+}
+
+
+.align_r{
+    text-align: right;
+}
+
+.fecha{
+    width: 300px;
+}
+
+.nombre{
+    width: 50%;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.336));
+}
+
+.contenedor{
+    background-image:url('../img/img_5.jpg');
+    background-repeat: no-repeat;
+    background-position: 210px -160px;
+    height: 600px;
+}
+
+.centrado_vertical{
+    display: flex;
+    align-items: center;
+}
+
+.bg_cafe{
+    background-image: url(../img/cafe.svg);
+    background-repeat: no-repeat;
+    background-position: 681px -50px !important;
+    background-size: 100% 900px;
+    background-position: center center;
+}
+
+.raiz{
+    background-image:url('../img/raiz.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100% !important;
+    background-position: 0 40px;
+    background-size: cover !important;
+}
+
+.raiz_cafe{
+    background-image:url('../img/raiz\ 2.svg');
+    background-repeat: no-repeat;
+    background-position: -400px 100px !important;
+    background-size: cover !important;
+    background-position: center center;
+    margin-bottom: 100px;
+}
+
+.back_blue{
+    background-color: #D9E2F3;
+    text-align: center;
+    font-size: 28px;
+    color: #25567B;
+    padding: 75px;
+}
+
+.border_cafe{
+    background-color: #C4A890;
+    height: 5px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.border_light{
+    background-color: #fff;
+    height: 5px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.border_l{
+    background-color: #C4A890;
+    height: 5px;
+    width: 100px;
+}
+
+.translate_y{
+    transform: translateY(200px);
+    width: 100%;
+}
+
+.space{
+    margin-bottom: 200px;
+}
+
+h1.cafe{
+    color: #C4A890;
+}
+
+.back_darkblue{
+    background-image:url('../img/dark_blue.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 450px;
+    background-position: 0 75px;
+}
+
+.back_darkblue{
+    background-image:url('../img/dark_blue.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 450px;
+    background-position: 0 75px;
+}
+
+.dark_blue{
+    background-image:url('../img/dark_blue.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-position: 0 75px;
+}
+
+.fiesta_ico{
+    width: 100px;
+}
+
+.color_azul{
+    color: #25567B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+.txt_azul{
+    color: #25567B;
+}
+
+.btn-azul{
+    background-color: #25567B;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+@media (max-width: 1399px) {
+    .contenedor{
+        background-position: 140px -160px;
+    }
+
+    .back_blue{
+        padding: 60px;
+    }
+}
+
+@media (max-width: 1299px) {
+    .back_blue{
+        padding: 50px;
+    }
+
+    .space{
+        margin-bottom: 150px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .contenedor{
+        background-position: 110px -160px;
+    }
+
+    .translate_y{
+        transform: translateY(75px);
+        width: 100%;
+    }
+
+    .back_blue{
+        padding: 40px;
+    }
+
+    .raiz{
+        background-position: 0 25px;
+        padding: 25px 0;
+    }
+
+    .space{
+        margin-bottom: 50px;
+    }
+    
+    .bg_cafe{
+        background-position: 500px -250px !important;
+        background-size: 100% 1200px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contenedor{
+        background-position: 110px -160px;
+    }
+
+    .translate_y{
+        transform: translateY(75px);
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .contenedor{
+        background-position: 0px 0px;
+        text-align: center;
+        height: 750px;
+        background-position: center center;
+        flex-direction: column;
+    }
+
+    .align_r{
+        text-align: center;
+    }
+
+    .nombre{
+        width: 75%;
+        text-align: center;
+    }
+
+    .centrado_vertical{
+        display: flex;
+        align-items: inherit;
+        text-align: center;
+    }
+
+    .translate_y{
+        transform: translateY(0px);
+        width: 100%;
+    }
+
+    .back_blue{
+        font-size: 18px;
+    }
+
+    .space{
+        margin-bottom: 0px;
+    }
+
+    .back_darkblue{
+        background-repeat: repeat;
+        background-size: 100% 100%;
+        background-position: 0 0;
+        padding: 50px;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .border_l{
+        margin: 0 auto;
+    }
+
+    .bg_cafe{
+        background-position: 0 0 !important;
+        background-size: 100% auto;
+    }
+    
+}
+
+@media (max-width: 767px) {    
+    .back_blue{
+        font-size: 28px;
+        padding: 50px;
+    }
+
+    .translate_y{
+        margin-bottom: 50px;
+    }
+
+    .back_darkblue{
+        padding: 0px;
+    }
+
+    .raiz{
+        background-color: #fff;
+        background-position: center center !important;
+        padding: 20px;
+    }
+
+    .space{
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 550px) {    
+    .nombre{
+        width: 100%;
+    }
+
+    .fecha{
+        width: 250px;
+    }
+
+    .back_blue{
+        font-size: 28px;
+    }
+
+    .raiz_cafe{
+        background-position: center center !important;
+    }
+}
+
+@media (max-width: 440px) {
+    .contenedor{
+        height: 650px;
+    }
+}
